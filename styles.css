@@ -1,65 +1,84 @@
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 30px;
-  }
+  background-color: #000;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+
+
+    --s: 200px;
+  /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background:
+    repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  background-color: #9f2f2f;
+
+
   
-  .logo {
-    margin-bottom: 20px;
-  }
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: 18px;
   
-  table {
-    border-collapse: collapse;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border: 2px solid #fff;
-    background-color: #111;
-  }
-  
-  th, td {
-    padding: 15px;
-    text-align: left;
-    font-size: 18px;
-  }
-  
-  th {
-    background-color: #ff0000;
-    color: #fff;
-  }
-  
-  td {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  tr:hover {
-    background-color: #333;
-  }
-  
-  .input-container {
-    margin-bottom: 30px;
-  }
-  
-  .input-container input {
-    margin-right: 10px;
-    font-size: 16px;
-    padding: 5px;
-    width: 150px;
-  }
-  
-  button {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #990000;
-  }
+}
+
+th {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+td {
+  background-color: #222;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #333;
+}
+
+.input-container {
+  margin-bottom: 30px;
+}
+
+.input-container input {
+  margin-right: 10px;
+  font-size: 1rem;
+  padding: 5px;
+  width: 150px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
